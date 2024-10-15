@@ -211,30 +211,39 @@ public sealed partial class MainWindow : Window
             switch (sender.Key)
             {
                 case Windows.System.VirtualKey.Number1:
+                case Windows.System.VirtualKey.NumberPad1:
                     tabToSelect = 0;
                     break;
                 case Windows.System.VirtualKey.Number2:
+                case Windows.System.VirtualKey.NumberPad2:
                     tabToSelect = 1;
                     break;
                 case Windows.System.VirtualKey.Number3:
+                case Windows.System.VirtualKey.NumberPad3:
                     tabToSelect = 2;
                     break;
                 case Windows.System.VirtualKey.Number4:
+                case Windows.System.VirtualKey.NumberPad4:
                     tabToSelect = 3;
                     break;
                 case Windows.System.VirtualKey.Number5:
+                case Windows.System.VirtualKey.NumberPad5:
                     tabToSelect = 4;
                     break;
                 case Windows.System.VirtualKey.Number6:
+                case Windows.System.VirtualKey.NumberPad6:
                     tabToSelect = 5;
                     break;
                 case Windows.System.VirtualKey.Number7:
+                case Windows.System.VirtualKey.NumberPad7:
                     tabToSelect = 6;
                     break;
                 case Windows.System.VirtualKey.Number8:
+                case Windows.System.VirtualKey.NumberPad8:
                     tabToSelect = 7;
                     break;
                 case Windows.System.VirtualKey.Number9:
+                case Windows.System.VirtualKey.NumberPad9:
                     // Select the last tab
                     tabToSelect = invokedTabView.TabItems.Count - 1;
                     break;
