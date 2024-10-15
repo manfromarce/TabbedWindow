@@ -1,0 +1,47 @@
+<Window
+    x:Class="AvaloniaTabbedApp.Views.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="using:FluentAvalonia.UI.Controls"
+    xmlns:uip="using:FluentAvalonia.UI.Controls.Primitives"
+    xmlns:views="clr-namespace:AvaloniaTabbedApp.Views"
+    xmlns:vm="using:AvaloniaTabbedApp.ViewModels"
+    Title="AvaloniaTabbedApp"
+    MinWidth="330"
+    MinHeight="300"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    Icon="/Assets/avalonia-logo.ico"
+    KeyDown="MainWindow_KeyDown"
+    Loaded="MainWindow_Loaded"
+    mc:Ignorable="d">
+    <ui:TabView
+        x:Name="tabView"
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Stretch"
+        AddTabButtonClick="TabView_AddTabButtonClick"
+        AllowDropTabs="True"
+        CanDragTabs="True"
+        CanReorderTabs="True"
+        CloseButtonOverlayMode="Always"
+        TabCloseRequested="TabView_TabCloseRequested"
+        TabDragStarting="TabDragStarting"
+        TabDroppedOutside="TabDroppedOutside"
+        TabStripDragOver="TabStripDragOver"
+        TabStripDrop="TabStripDrop"
+        TabWidthMode="Equal">
+        <!--
+            Use this so we can set the margin in the tabstrip so it
+            doesn't end up underneath the caption buttons
+            This also forms our custom drag region for the titlebar so we
+            can still drag the window around
+            On Mac/Linux this is irrelevant since we don't replace the
+            system titlebar
+        -->
+        <ui:TabView.TabStripFooter>
+            <Panel Name="CustomDragRegion" Background="Transparent" />
+        </ui:TabView.TabStripFooter>
+    </ui:TabView>
+</Window>
