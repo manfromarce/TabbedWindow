@@ -9,14 +9,14 @@
 
   <Identity
     Name="647b9839-e63d-4dfe-9379-a42092c4779f"
-    Publisher="CN=manfr"
+    Publisher="CN=Author"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="647b9839-e63d-4dfe-9379-a42092c4779f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>WinUiTabbedApp</DisplayName>
-    <PublisherDisplayName>manfr</PublisherDisplayName>
+    <PublisherDisplayName>Author</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

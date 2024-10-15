@@ -58,7 +58,8 @@ public sealed partial class MainWindow : Window
     {
         return new TabViewItem()
         {
-            Header = header,
+            Header = header,   
+            IconSource = new SymbolIconSource() { Symbol = Symbol.Home },
             Content = new MainView()
         };
     }
